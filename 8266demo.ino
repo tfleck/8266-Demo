@@ -27,7 +27,7 @@ void setup() {
   resp = espData("setup_io",15000,false);
   //Serial.println("setup: "+resp);
   if(resp.indexOf("connected") < 0){
-    Serial.println("Adafruit IO Connection Failed");
+    Serial.println("\nAdafruit IO Connection Failed");
     while(1);
   }
   resp = espData("setup_feed=1,test feed",2000,false);
