@@ -46,7 +46,7 @@ void loop() {
   Serial.print("Num is: ");
   Serial.println(num);
 
-  String resp = espData("send_data=1,"+String(num),2000,false);
+  String resp = espData("send_data=1,"+String(num),2000,debug);
 
   num++;
 }
